@@ -8,8 +8,10 @@ def selected_sorting(data):
         for j in range(i+1, len(data),1):
             if data[j] < data[min_index]:
                 min_index = j
-            if min_index is not i:
-                data[i] , data[min_index] = data[min_index] , data[i]
+#             if min_index is not i:                        >>>>>>>>>>>>>>>>>>>>>>> # yakoo meka waradi shavendra
+#                 data[i] , data[min_index] = data[min_index] , data[i]
+        if min_index is not i:                        >>>>>>>>>>>>>>>>>>>>>>> # mehema dapan
+            data[i] , data[min_index] = data[min_index] , data[i]
     print(data)
    
         
